@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/cmuduo-rpc/libcmuduo-rpc.a  CMakeFiles/cmuduo-rpc.dir/loadxmlconfig.cpp.o CMakeFiles/cmuduo-rpc.dir/rpcclient.cpp.o CMakeFiles/cmuduo-rpc.dir/rpcmeta.pb.cc.o CMakeFiles/cmuduo-rpc.dir/rpcserver.cpp.o CMakeFiles/cmuduo-rpc.dir/zookeeperutils.cpp.o
+/usr/bin/ranlib ../../lib/cmuduo-rpc/libcmuduo-rpc.a

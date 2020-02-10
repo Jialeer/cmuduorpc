@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<Server>
+  <!--配置rpc server的ip地址和port端口号-->
+  <RpcServer>
+    <ip>127.0.0.1</ip>
+    <port>6000</port>
+  </RpcServer>
+
+  <!--配置zookeeper服务器的连接字符串，格式 ip地址:port端口号-->
+  <zookeeper>
+    <host>127.0.0.1:2181</host>
+    <timeout>30000</timeout>
+  </zookeeper>
+</Server>

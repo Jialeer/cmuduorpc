@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(cmuduo-rpc)
+add_subdirectory(src)
+add_subdirectory(thirdparty)
+add_subdirectory(test)

@@ -1,0 +1,32 @@
+// protobuf的版本
+syntax = "proto3";
+
+// 添加该标识，让protoc产生service服务类和服务方法
+option cc_generic_services = true;
+//option py_generic_services = true;  
+//option java_generic_services = true;  
+
+// 1. 定义服务方法的参数打包类型和返回值的打包类型
+message LoginRequest{
+	string name = 1;
+	string pwd = 2;
+}
+message LoginResponse{
+	bool isLoginSuccess = 1;
+}
+
+message RegRequest{
+	int32 id = 1;
+	string name = 2;
+	string pwd = 3;
+	string tel = 4;
+}
+message RegResponse{
+	bool isRegSuccess = 1;
+}
+
+// 定义service服务类和服务方法
+service LocalServiceRpc{
+	rpc login(LoginRequest) returns(LoginResponse);
+	rpc reg(RegRequest) returns(RegResponse);
+}
